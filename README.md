@@ -7,4 +7,6 @@ To use admin functionality, in database, change desire user's 'role_as' filed to
 
 
 0 - user
+
+
 1 - admin
