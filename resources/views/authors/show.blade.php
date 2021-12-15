@@ -3,6 +3,10 @@
 @section('content')
     <div class="container">
 
+        <a href="/authors">  <button class="btn btn-outline-secondary" style="margin-bottom: 20px">
+            < Authors</button> 
+        </a>
+        
             <h4 class="text-dark"> {{ $author->name }} </h4> <br>
             @forelse ($author->books as $book)
                 <ul>
