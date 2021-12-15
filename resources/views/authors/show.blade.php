@@ -13,7 +13,7 @@
                     <a href="/books/{{ $book->id }}"> <li class="link-secondary">{{ $book->title }}</li> </a>
                 </ul>
             @empty
-                <p>No authors found :(</p>
+                <p>No books found :(</p>
             @endforelse
 
             <hr>

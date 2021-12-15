@@ -4,6 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            
+            <a href="/books/{{$book->id}}"> <button style="margin-bottom: 20px" class="btn btn-outline-secondary">< Back</button> </a>
+            
             <h4 class="text-dark">Update {{ $book->title }}</h4>
             <div class="card">
                 <form class="form-control" method="POST" action="/books/{{ $book->id }}">

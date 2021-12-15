@@ -27,7 +27,11 @@
                     {{ config('app.name', 'Laravel') }}
                 </a>
                   <a class="nav-link text-secondary"  href="/books">Books</a>
-                  <a class="nav-link text-secondary" href="/books/create">Add new book</a>
+                  
+                  @auth
+                    <a class="nav-link text-secondary" href="/books/create">Add new book</a>
+                  @endauth  
+                  
                   <a class="nav-link text-secondary" href="{{ route('authors.index') }}">Authors</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

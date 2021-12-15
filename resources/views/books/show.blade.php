@@ -21,6 +21,7 @@
           
             <div class="d-flex">
 
+            @auth
                 <a href="/books/{{ $book->id }}/edit" class="btn btn-outline-success">Edit</a>
                     
                 <form action="/books/{{ $book->id }}" method="POST">
@@ -28,7 +29,7 @@
                     @method('DELETE')
                     <button type="submit" class="btn btn-outline-danger">Delete</button>
                 </form>
-        
+            @endauth
             </div>
 
             <hr>
