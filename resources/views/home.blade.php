@@ -15,7 +15,7 @@
                     @endif
 
                     @if (Auth::user()->role_as == '1')
-                        <div class="aslert alert-success">
+                        <div class="alert alert-success" role="alert">
                             Welcome Admin!
                         </div>
                     @endif
