@@ -8,8 +8,9 @@
         </a>
         
             <h4 class="text-dark"> {{ $book->title }} </h4> <br>
+            Authors:
             @foreach ($book->authors as $author)
-            Author:  <a href="/authors/{{ $author->id }}" class="link-dark"> <span> {{ $author->name }}</span> </a> <br>
+            <a href="/authors/{{ $author->id }}" class="link-dark"> <span> {{ $author->name }}</span> </a> <br>
             @endforeach
             <span>Release year: {{ $book->release_year }}</span>
 
